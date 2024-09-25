@@ -1,6 +1,6 @@
 import React from 'react';
 
-const dashboard.layout = () => {
+const dashboardLayout = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const dashboard.layout = () => {
   );
 };
 
-export default dashboard.layout;
+export default dashboardLayout;
