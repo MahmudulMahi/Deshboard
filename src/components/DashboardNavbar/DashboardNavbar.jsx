@@ -51,6 +51,7 @@ const DashboardNavbar = () => {
                                     </li>
                                     <li><Link to="/dashboard">Settings</Link></li>
                                     <li><Link to="/dashboard">Logout</Link></li>
+                                    
                                 </ul>
                             </div>
 
