@@ -4,14 +4,15 @@ import { Navigate, useRoutes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import { permittedRoutes } from './routes/routes';
 import DashboardLayout from './components/DashboardLayout/DashboardLayout';
+import Login from './components/Page/auth/Login';
 
 const mainRoutes = { 
   path: "/",
   element: '',
   children: [
     { path: "*", element: <Navigate to="/404" /> },
-    // { path: "/", element: <Login /> },
-    // { path: "/login", element: <Login /> },
+    { path: "/", element: <Login /> },
+    { path: "/login", element: <Login /> },
   ],
   
 };

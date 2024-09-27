@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
-import { getToken, networkErrorHandeller, setToken } from '../../../utils.js/helper';
+// import { getToken, networkErrorHandeller, setToken } from '../../../utils.js/helper';
 import PrimaryButton from '../../button/PrimaryButton';
+import { NetworkServices } from '../../network/Index';
+import { getToken, networkErrorHandeller, setToken } from '../../../utils.js/helper';
 
 
 const inputStyle = "mt-1 px-3 py-2 bg-white border shadow-sm border-slate-300 placeholder-slate-400 focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-full rounded-md sm:text-sm focus:ring-1"
@@ -17,10 +19,13 @@ const Login = () => {
     handleSubmit,
     formState: { errors },
   } = useForm()
+  
 
   const onSubmit = async (data) => {
+    
     try {
       setLoading(true)
+ 
       const response = await NetworkServices.Authentication.login(data)
       if (response.status === 200) {
         setToken(response.data.data.token);
