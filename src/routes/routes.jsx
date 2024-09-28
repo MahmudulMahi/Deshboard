@@ -19,10 +19,10 @@ const appRoutes = [
           { path: "category/create", element: <CategoryCreate /> },
           { path: "category/edit/:id", element: <CategoryEdit /> },
 
-          // /** product */
-          // { path: "product", element:  <Product /> },
-          // { path: "product/create", element: <ProductCreate/> },
-          // { path: "product/edit/:id", element: <ProductEdit /> },
+          /** product */
+          { path: "product", element:  <Product /> },
+          { path: "product/create", element: <ProductCreate/> },
+          { path: "product/edit/:id", element: <ProductEdit /> },
       ],
   },
 ]; 
