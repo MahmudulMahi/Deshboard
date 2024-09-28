@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { SkeletonTable } from "../../loading/SkeletonTable";
 import DataTable from "react-data-table-component";
 import { networkErrorHandeller } from '../../../utils.js/helper';
+import { Toastify } from "../../toastify";
 
 
 const index = () => {

@@ -15,9 +15,9 @@ const appRoutes = [
           { path: "", element: <Dashboard></Dashboard> },
           
           // /** category */
-          // { path: "category", element: <CategoryList /> },
-          // { path: "category/create", element: <CategoryCreate /> },
-          // { path: "category/edit/:id", element: <CategoryEdit /> },
+          { path: "category", element: <CategoryList></CategoryList> },
+          { path: "category/create", element: <CategoryCreate /> },
+          { path: "category/edit/:id", element: <CategoryEdit /> },
 
           // /** product */
           // { path: "product", element:  <Product /> },
